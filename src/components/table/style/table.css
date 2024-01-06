@@ -1,0 +1,82 @@
+:root {
+    --borderClr : #ddd;
+    --border    : 1px solid var(--borderClr);
+    --radius    : 8px;
+    --evenRowClr: #e8e8e8;
+}
+
+table {
+    box-shadow     : 1px 1px 5px #18181820;
+    border         : var(--border);
+    border-collapse: separate;
+    border-left    : 0;
+    border-radius  : var(--radius);
+    border-spacing : 0px;
+    margin         : 0 auto;
+    margin-top     : 40px;
+    font-size      : 2em;
+}
+
+thead {
+    display        : table-header-group;
+    vertical-align : middle;
+    border-color   : inherit;
+    border-collapse: separate;
+}
+
+tr {
+    display       : table-row;
+    vertical-align: inherit;
+    border-color  : inherit;
+}
+
+tr:nth-child(even) {
+    background-color: var(--evenRowClr)
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+th,
+td {
+    padding       : 6px 14px;
+    text-align    : left;
+    vertical-align: top;
+    border-left   : var(--border);
+    cursor        : pointer;
+}
+
+td {
+    border-top: var(--border);
+}
+
+thead:first-child tr:first-child th:first-child,
+tbody:first-child tr:first-child td:first-child {
+    border-radius: var(--radius) 0 0 0;
+}
+
+thead:last-child tr:last-child th:first-child,
+tbody:last-child tr:last-child td:first-child {
+    border-radius: 0 0 0 var(--radius);
+}
+
+th svg {
+    max-width: 12px;
+}
+
+th svg.ace {
+    transform: rotate(0deg);
+}
+
+th svg.desc {
+    transform: rotate(180deg);
+}
+
+th .headerContainer {
+    width          : 200px;
+    height         : 100%;
+    display        : flex;
+    justify-content: space-between;
+    align-items    : center;
+}
