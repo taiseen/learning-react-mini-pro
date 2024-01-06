@@ -2,3 +2,5 @@
 
 ## Learning - React Mini Projects
 
+* Context Menu
+* Table

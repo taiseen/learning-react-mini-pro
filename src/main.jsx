@@ -3,6 +3,7 @@ import App from "./App.jsx";
 import React from "react";
 import "./styles/index.css";
 
+
 const htmlRoot = document.getElementById("root");
 const reactRoot = ReactDOM.createRoot(htmlRoot);
 

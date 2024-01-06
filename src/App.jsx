@@ -1,5 +1,11 @@
+import Menu from "./components/contextMenu";
+
 const App = () => {
-  return <main>App</main>;
+  return (
+    <div className="mainContainer">
+      <Menu />
+    </div>
+  );
 };
 
 export default App;
