@@ -1,3 +1,4 @@
+import AccordionMenu from "./components/accordion";
 import Menu from "./components/contextMenu";
 import Table from "./components/table";
 
@@ -6,7 +7,9 @@ const App = () => {
     <div className="mainContainer">
       {/* <Menu /> */}
 
-      <Table />
+      {/* <Table /> */}
+
+      <AccordionMenu />
     </div>
   );
 };

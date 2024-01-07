@@ -1,0 +1,64 @@
+.accordionMenu {
+    margin          : 0 auto;
+    margin-top      : 40px;
+    background-color: white;
+    border-radius   : 5px;
+    box-shadow      : 0 1px 2px #00000033;
+    width           : fit-content;
+}
+
+.accordionItem {
+    display       : flex;
+    flex-direction: column;
+    max-width     : 500px;
+}
+
+.accordionItem .btn {
+    width           : 100%;
+    display         : flex;
+    align-items     : center;
+    justify-content : space-between;
+    padding         : 10px 15px;
+    font-size       : 18px;
+    font-weight     : 700;
+    border          : 0;
+    background-color: transparent;
+    cursor          : pointer;
+    fill            : black;
+    color           : black;
+    transition      : color .15s ease, fill .15s ease;
+    background-color: #e4e4e4;
+}
+
+.accordionItem .btn:hover {
+    fill : #6d6d6d;
+    color: #6d6d6d;
+}
+
+.accordionItem .direction {
+    display        : flex;
+    align-items    : center;
+    justify-content: center;
+    width          : 15px;
+    font-weight    : 600;
+}
+
+/* main responsibility for data displaying  */
+.accordionItem .contentParent {
+    max-height   : 0;
+    overflow     : hidden;
+    transition   : max-height .15s ease-out;
+    color        : black;
+    border-bottom: 1px solid black;
+}
+
+/* main responsibility for data displaying  */
+.accordionItem.show .contentParent {
+    max-height: fit-content;
+    transition: max-height .15s ease-out;
+}
+
+
+.accordionItem .contentParent .content {
+    padding: 10px 15px;
+}
