@@ -9,7 +9,11 @@ const App = () => {
 
       {/* <Table /> */}
 
-      <AccordionMenu />
+      {/* <AccordionMenu /> */}
+
+      {/* <DropdownMenu /> */}
+
+      {/* <Sidebar /> */}
     </div>
   );
 };
