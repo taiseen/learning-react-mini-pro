@@ -1,3 +1,4 @@
+import DropdownMenu from "./components/dropdownMenu";
 import AccordionMenu from "./components/accordion";
 import Menu from "./components/contextMenu";
 import Table from "./components/table";
@@ -11,7 +12,7 @@ const App = () => {
 
       {/* <AccordionMenu /> */}
 
-      {/* <DropdownMenu /> */}
+      <DropdownMenu />
 
       {/* <Sidebar /> */}
     </div>
