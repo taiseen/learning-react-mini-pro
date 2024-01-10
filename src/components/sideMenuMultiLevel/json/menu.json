@@ -1,0 +1,129 @@
+[
+  {
+    "title": "Electronics",
+    "icon": "📱",
+    "children": [
+      {
+        "title": "Smartphones",
+        "icon": "📱",
+        "path": "/smartphones"
+      },
+      {
+        "title": "Laptops",
+        "icon": "💻",
+        "path": "/laptops"
+      },
+      {
+        "title": "Cameras",
+        "icon": "📷",
+        "children": [
+          {
+            "title": "Canon DSLR",
+            "icon": "📷",
+            "path": "/canon-DSLR"
+          },
+          {
+            "title": "Nekon DSLR",
+            "icon": "📷",
+            "path": "/nekon-DSLR"
+          },
+          {
+            "title": "Camera Lens",
+            "icon": "🎥",
+            "path": "/camera-Lens"
+          }
+        ]
+      },
+      {
+        "title": "FAQ",
+        "icon": "❓",
+        "path": "/faq"
+      }
+    ]
+  },
+  {
+    "title": "Clothing",
+    "icon": "👕",
+    "children": [
+      {
+        "title": "Men's Apparel",
+        "path": "/mens"
+      },
+      {
+        "title": "Woman's Apparel",
+        "path": "/womans"
+      },
+      {
+        "title": "Kids' Clothing",
+        "path": "/kids-Clothing"
+      },
+      {
+        "title": "Sportswear",
+        "path": "/sportswear"
+      }
+    ]
+  },
+  {
+    "title": "Home & Living",
+    "icon": "🏡",
+    "children": [
+      {
+        "title": "Furniture",
+        "path": "/furniture"
+      },
+      {
+        "title": "Decor",
+        "icon": "🖼️",
+        "children": [
+          {
+            "title": "Kitchen Appliances",
+            "path": "/kitchen-Appliances"
+          },
+          {
+            "title": "Home Furniture",
+            "icon": "🛋️ ",
+            "children": [
+              {
+                "title": "Double Bed",
+                "path": "/double-Bed"
+              },
+              {
+                "title": "Single Bed",
+                "path": "/single-Bed"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Decor Lights",
+        "path": "/decor"
+      }
+    ]
+  },
+
+  {
+    "title": "Support",
+    "icon": "📞",
+    "path": "/support"
+  },
+  {
+    "title": "Report Bug",
+    "icon": "🐞",
+    "path": "/report-bug"
+  },
+  {
+    "title": "User",
+    "icon": "👨‍🦱",
+    "children": [
+      {
+        "title": "Edit Profile",
+        "path": "/edit-profile"
+      },
+      {
+        "title": "Logout",
+        "path": "/logout"
+      }
+    ]
+  }
+]
