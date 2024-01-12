@@ -1,5 +1,5 @@
-import { dropdownMenuData } from "./data";
 import { useEffect, useRef, useState } from "react";
+import { dropdownMenuData } from "./data";
 import Item from "./Item";
 import "./style/dropdown.css";
 
@@ -26,8 +26,6 @@ const DropdownMenu = () => {
       document.removeEventListener("click", handleOutsideClickOfDropdownDiv);
     };
   }, []);
-
-  //  {isToggle ? "-" : "+"}
 
   return (
     <div className="dropdown" ref={dropdownRef}>
