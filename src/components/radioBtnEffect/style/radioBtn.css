@@ -1,0 +1,36 @@
+input[type="radio"]:checked,
+input[type="radio"]:checked+label {
+    color: white;
+}
+
+input[id="r-1"]:checked~.activeStatus {
+    transform: translateX(0);
+}
+
+input[id="r-2"]:checked~.activeStatus {
+    transform: translateX(100%);
+}
+
+input[id="r-3"]:checked~.activeStatus {
+    transform: translateX(200%);
+}
+
+input[id="r-4"]:checked~.activeStatus {
+    transform: translateX(300%);
+}
+
+input[id="r-5"]:checked~.activeStatus {
+    transform: translateX(400%);
+}
+
+.activeStatus {
+    position: absolute;
+    display: flex;
+    height: 54px;
+    width: 150px;
+    background-color: #3d3d3d;
+    color: white;
+    z-index: 1;
+    border-radius: 99px;
+    transition: .2s ease;
+}
