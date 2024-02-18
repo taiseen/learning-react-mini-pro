@@ -3,10 +3,15 @@
 // import AccordionMenu from "./components/accordion";
 // import Menu from "./components/contextMenu";
 // import Table from "./components/table";
+// import RadioBtnEffect from "./components/radioBtnEffect";
 
-import RadioBtnEffect from "./components/radioBtnEffect";
+import RadioBtn from "./components/radioBtn";
+
 
 const App = () => {
+
+
+
   return (
     <div className="mainContainer">
       {/* <Menu /> */}
@@ -19,7 +24,10 @@ const App = () => {
 
       {/* <Sidebar /> */}
 
-      <RadioBtnEffect />
+      {/* <RadioBtnEffect /> */}
+
+      <RadioBtn />
+
     </div>
   );
 };
