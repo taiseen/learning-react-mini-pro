@@ -17,18 +17,18 @@ export const layoutOptions = [
         text: 'Grid',
         icon: 'layout_grid.webp',
     },
-    // {
-    //     rID: 'l4',
-    //     value: 'demo',
-    //     text: 'Demo',
-    //     icon: 'assets-template.webp',
-    // },
-    // {
-    //     rID: 'l5',
-    //     value: 'zoo',
-    //     text: 'Zoo',
-    //     icon: 'layout_grid.webp',
-    // },
+    {
+        rID: 'l4',
+        value: 'demo',
+        text: 'Demo',
+        icon: 'assets-template.webp',
+    },
+    {
+        rID: 'l5',
+        value: 'zoo',
+        text: 'Zoo',
+        icon: 'layout_column.webp',
+    },
     // {
     //     rID: 'l6',
     //     value: 'app',

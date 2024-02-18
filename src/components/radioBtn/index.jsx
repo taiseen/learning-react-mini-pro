@@ -1,5 +1,5 @@
-import { useState } from "react";
 import { layoutOptions } from "./data";
+import { useState } from "react";
 
 const RadioBtn = () => {
     const layouts = layoutOptions.map(data => data.value);
@@ -7,6 +7,8 @@ const RadioBtn = () => {
     const [selectedLayout, setSelectedLayout] = useState({ type: 'auto', idx: 0 }); // Set a default layout
 
     const handleLayoutChange = (e, idx) => setSelectedLayout({ type: e.target.value, idx });
+
+    const dynamicSelection = layouts.includes(selectedLayout.type) && `translateX(${selectedLayout.idx * 100}%)`;
 
     return (
         <div className="flex bg-white/30 w-fit p-2 mx-auto mt-20 rounded shadow-lg relative">
@@ -19,7 +21,7 @@ const RadioBtn = () => {
                             className="hidden"
                             value={option.value}
                             onChange={(e) => handleLayoutChange(e, idx)}
-                            checked={selectedLayout === option.value}
+                            checked={selectedLayout.type === option.value}
                         />
 
                         <label
@@ -33,12 +35,11 @@ const RadioBtn = () => {
                     </div>
                 ))}
 
-                <span className={`absolute w-[100px] h-[30px] border border-[#C1DEFFFF] rounded-2xl opacity-1 bg-[#C2DEFF59] duration-300 ease-in-out
-                ${layouts.includes(selectedLayout.type) ? `translate-x-[${selectedLayout.idx * 100}%]` : ''}`}>
+                <span
+                    style={{ transform: dynamicSelection }}
+                    className={`absolute w-[100px] h-[30px] border border-[#C1DEFFFF] rounded-2xl opacity-1 bg-[#C2DEFF59] transform transition-transform duration-300 ease-in-out`}>
                 </span>
             </div>
-
-
         </div >
     )
 }
