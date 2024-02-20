@@ -5,7 +5,7 @@
 // import Menu from "./components/contextMenu";
 // import Table from "./components/table";
 
-import RadioBtn from "./components/radioBtn";
+import AxiosCrud from "./components/axiosCrud";
 
 const App = () => {
 
@@ -23,7 +23,9 @@ const App = () => {
 
       {/* <RadioBtnEffect /> */}
 
-      <RadioBtn />
+      {/* <RadioBtn /> */}
+
+      <AxiosCrud />
 
     </div>
   );
