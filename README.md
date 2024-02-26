@@ -13,3 +13,6 @@
 ```
 yarn run server
 ```
+
+- yarn add axios
+- yarn add json-server
