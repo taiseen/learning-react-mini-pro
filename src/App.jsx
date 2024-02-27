@@ -4,9 +4,10 @@
 // import AccordionMenu from "./components/accordion";
 // import AxiosCrud from "./components/axiosCrud";
 // import Menu from "./components/contextMenu";
+// import Tabs from "./components/tabs/Tabs";
 // import Table from "./components/table";
 
-import Tabs from "./components/tabs/Tabs";
+import InfiniteScroll from "./components/infiniteScroll";
 
 const App = () => {
 
@@ -28,7 +29,9 @@ const App = () => {
 
       {/* <AxiosCrud /> */}
 
-      <Tabs />
+      {/* <Tabs /> */}
+
+      <InfiniteScroll />
 
     </>
   );
