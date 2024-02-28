@@ -1,4 +1,5 @@
 // import RadioBtnEffect from "./components/radioBtnEffect";
+// import InfiniteScroll from "./components/infiniteScroll";
 // import Sidebar from "./components/sideMenuMultiLevel";
 // import DropdownMenu from "./components/dropdownMenu";
 // import AccordionMenu from "./components/accordion";
@@ -7,7 +8,7 @@
 // import Tabs from "./components/tabs/Tabs";
 // import Table from "./components/table";
 
-import InfiniteScroll from "./components/infiniteScroll";
+import ModalSystem from "./components/modalPortal";
 
 const App = () => {
 
@@ -31,7 +32,10 @@ const App = () => {
 
       {/* <Tabs /> */}
 
-      <InfiniteScroll />
+      {/* <InfiniteScroll /> */}
+
+      <ModalSystem modalNum={1} />
+      <ModalSystem modalNum={2} />
 
     </>
   );
