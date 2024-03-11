@@ -20,20 +20,19 @@ const TextareaConditionalUi = () => {
     const handleChangeWithKeyUp = e => {
         const { value } = e.target;
 
-        const textarea = textAreaRef.current;
+        const lines = value.split('\n').length; // track line enter press...
         const isValuePresent = !value.trim();
+
+        const textarea = textAreaRef.current;
 
         if (isValuePresent) {
             textarea.style.height = `40px`;
-        } else {
-            textarea.style.height = 'auto'; // Reset height to auto
         }
 
-        const lines = value.split('\n').length; // track line enter press...
-
         if (lines > 1) {
-            setSHeight(lines * 27);
+            setSHeight(lines * 32);
         } else {
+            textarea.style.height = 'auto'; // Reset height to auto
             textarea.style.height = `${textarea.scrollHeight}px`;
         }
 
@@ -97,4 +96,4 @@ const TextareaConditionalUi = () => {
     )
 }
 
-export default TextareaConditionalUi
+export default TextareaConditionalUi;
