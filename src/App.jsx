@@ -2,13 +2,14 @@
 // import InfiniteScroll from "./components/infiniteScroll";
 // import Sidebar from "./components/sideMenuMultiLevel";
 // import DropdownMenu from "./components/dropdownMenu";
+// import ModalSystem from "./components/modalPortal";
 // import AccordionMenu from "./components/accordion";
 // import AxiosCrud from "./components/axiosCrud";
 // import Menu from "./components/contextMenu";
 // import Tabs from "./components/tabs/Tabs";
 // import Table from "./components/table";
 
-import ModalSystem from "./components/modalPortal";
+import TextareaConditionalUi from "./components/textareaConditionalUi";
 
 const App = () => {
 
@@ -34,9 +35,10 @@ const App = () => {
 
       {/* <InfiniteScroll /> */}
 
-      <ModalSystem modalNum={1} />
-      <ModalSystem modalNum={2} />
+      {/* <ModalSystem modalNum={1} /> */}
+      {/* <ModalSystem modalNum={2} /> */}
 
+      <TextareaConditionalUi />
     </>
   );
 };
