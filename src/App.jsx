@@ -1,3 +1,4 @@
+// import TextareaConditionalUi from "./components/textareaConditionalUi";
 // import RadioBtnEffect from "./components/radioBtnEffect";
 // import InfiniteScroll from "./components/infiniteScroll";
 // import Sidebar from "./components/sideMenuMultiLevel";
@@ -9,7 +10,7 @@
 // import Tabs from "./components/tabs/Tabs";
 // import Table from "./components/table";
 
-import TextareaConditionalUi from "./components/textareaConditionalUi";
+import ListItemClick from "./components/listItemClick";
 
 const App = () => {
 
@@ -38,7 +39,9 @@ const App = () => {
       {/* <ModalSystem modalNum={1} /> */}
       {/* <ModalSystem modalNum={2} /> */}
 
-      <TextareaConditionalUi />
+      {/* <TextareaConditionalUi /> */}
+
+      <ListItemClick />
     </>
   );
 };
