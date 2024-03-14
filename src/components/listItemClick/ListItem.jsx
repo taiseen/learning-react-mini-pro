@@ -1,3 +1,5 @@
+import { childItems } from "./data";
+
 const ListItem = ({ item, isOpen, handleClick }) => {
 
     const absoluteStyle = 'cursor-pointer hover:bg-green-200 rounded p-2 duration-200';
@@ -23,9 +25,17 @@ const ListItem = ({ item, isOpen, handleClick }) => {
             <div
                 className={`absolute top-0 right-[-230px] flex gap-3 bg-red-300 rounded duration-200 origin-left ${isOpen ? 'scale-100 visible' : 'scale-0 invisible'}`}
             >
-                <p className={absoluteStyle} onClick={handleChildClick}>Item 1</p>
-                <p className={absoluteStyle} onClick={handleChildClick}>Item 2</p>
-                <p className={absoluteStyle} onClick={handleChildClick}>Item 3</p>
+                {
+                    childItems.map(item =>
+                        <p
+                            key={item.id}
+                            className={absoluteStyle}
+                            onClick={handleChildClick}
+                        >
+                            {item.title}
+                        </p>
+                    )
+                }
             </div>
         </div>
     )
