@@ -1,6 +1,7 @@
 // import TextareaConditionalUi from "./components/textareaConditionalUi";
 // import RadioBtnEffect from "./components/radioBtnEffect";
 // import InfiniteScroll from "./components/infiniteScroll";
+// import ListItemClick from "./components/listItemClick";
 // import Sidebar from "./components/sideMenuMultiLevel";
 // import DropdownMenu from "./components/dropdownMenu";
 // import ModalSystem from "./components/modalPortal";
@@ -10,7 +11,7 @@
 // import Tabs from "./components/tabs/Tabs";
 // import Table from "./components/table";
 
-import ListItemClick from "./components/listItemClick";
+import OutsideClickClose from "./components/outsideClickClose";
 
 const App = () => {
 
@@ -41,7 +42,9 @@ const App = () => {
 
       {/* <TextareaConditionalUi /> */}
 
-      <ListItemClick />
+      {/* <ListItemClick /> */}
+
+      <OutsideClickClose />
     </>
   );
 };
