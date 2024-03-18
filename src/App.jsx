@@ -1,4 +1,5 @@
 // import TextareaConditionalUi from "./components/textareaConditionalUi";
+// import OutsideClickClose from "./components/outsideClickClose";
 // import RadioBtnEffect from "./components/radioBtnEffect";
 // import InfiniteScroll from "./components/infiniteScroll";
 // import ListItemClick from "./components/listItemClick";
@@ -11,7 +12,7 @@
 // import Tabs from "./components/tabs/Tabs";
 // import Table from "./components/table";
 
-import OutsideClickClose from "./components/outsideClickClose";
+import BackPosition from "./components/backPosition";
 
 const App = () => {
 
@@ -44,7 +45,9 @@ const App = () => {
 
       {/* <ListItemClick /> */}
 
-      <OutsideClickClose />
+      {/* <OutsideClickClose /> */}
+
+      <BackPosition />
     </>
   );
 };
