@@ -5,6 +5,7 @@
 // import ListItemClick from "./components/listItemClick";
 // import Sidebar from "./components/sideMenuMultiLevel";
 // import DropdownMenu from "./components/dropdownMenu";
+// import BackPosition from "./components/backPosition";
 // import ModalSystem from "./components/modalPortal";
 // import AccordionMenu from "./components/accordion";
 // import AxiosCrud from "./components/axiosCrud";
@@ -12,7 +13,7 @@
 // import Tabs from "./components/tabs/Tabs";
 // import Table from "./components/table";
 
-import BackPosition from "./components/backPosition";
+import UserSelectedPlan from "./components/userSelectedPlan";
 
 const App = () => {
 
@@ -47,7 +48,9 @@ const App = () => {
 
       {/* <OutsideClickClose /> */}
 
-      <BackPosition />
+      {/* <BackPosition /> */}
+
+      <UserSelectedPlan />
     </>
   );
 };
