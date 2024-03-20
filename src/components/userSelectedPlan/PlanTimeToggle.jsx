@@ -1,14 +1,8 @@
-const PlanDuration = ({ planDuration, setPlanDuration }) => {
+import { useUserPlansContext } from "./context/UserPlansContext";
 
-    const handlePlanTimeChange = (timeId) => {
-        const updatedPlanTime = planDuration.map(time =>
-            time.id === timeId
-                ? { ...time, isChecked: true }
-                : { ...time, isChecked: false }
-        );
+const PlanTimeToggle = () => {
 
-        setPlanDuration(updatedPlanTime);
-    }
+    const { planDuration, handlePlanDurationChange } = useUserPlansContext();
 
     return (
         <div className="flex justify-evenly">
@@ -22,8 +16,9 @@ const PlanDuration = ({ planDuration, setPlanDuration }) => {
                             type="radio"
                             value={time.label}
                             checked={time.isChecked}
-                            onChange={() => handlePlanTimeChange(time.id)}
+                            onChange={() => handlePlanDurationChange(time.id)}
                         />
+
                         {time.label.toUpperCase()}
                     </label>
                 )
@@ -32,4 +27,4 @@ const PlanDuration = ({ planDuration, setPlanDuration }) => {
     )
 }
 
-export default PlanDuration
+export default PlanTimeToggle

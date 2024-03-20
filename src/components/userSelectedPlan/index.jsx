@@ -1,35 +1,17 @@
 import TotalCalculation from "./TotalCalculation";
-import PlanDuration from "./PlanDuration";
+import PlanTimeToggle from "./PlanTimeToggle";
 import PlanList from "./PlanList";
-import { planInterval, plans } from "./data";
-import { useState } from "react";
 
 const UserSelectedPlan = () => {
-
-    const [planDuration, setPlanDuration] = useState(planInterval);
-    const planTime = planDuration.find(data => data.isChecked);
-
-    const [selectedPlan, setSelectedPlan] = useState(plans);
-    const userPlanSelect = selectedPlan.find(data => data.isChecked);
 
     return (
         <div className="w-96 flex flex-col gap-3 p-2 bg-slate-200 rounded mx-auto">
 
-            <PlanDuration
-                setPlanDuration={setPlanDuration}
-                planDuration={planDuration}
-            />
+            <PlanTimeToggle />
 
-            <PlanList
-                setSelectedPlan={setSelectedPlan}
-                selectedPlan={selectedPlan}
-                planTime={planTime}
-            />
+            <PlanList />
 
-            <TotalCalculation
-                userPlanSelect={userPlanSelect}
-                planTime={planTime}
-            />
+            <TotalCalculation />
 
         </div>
     );

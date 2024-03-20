@@ -1,7 +1,14 @@
-const TotalCalculation = ({ userPlanSelect, planTime }) => {
+import { useUserPlansContext } from "./context/UserPlansContext";
+
+const TotalCalculation = () => {
+
+    const { planTimeObj, selectedPlanObj } = useUserPlansContext();
+    const { plan, price } = selectedPlanObj;
+    const { label } = planTimeObj;
 
     const handlePlanParches = (plan) => {
-        const priceId = plan.price[planTime.label].pricingId;
+        const priceId = plan.price[label].pricingId;
+
         console.log(priceId);
         alert(priceId)
     }
@@ -12,19 +19,19 @@ const TotalCalculation = ({ userPlanSelect, planTime }) => {
 
             <p>Your Selected Plan:
                 <span className="font-bold pl-1">
-                    {userPlanSelect.plan.toUpperCase()} - {planTime.label}
+                    {plan?.toUpperCase()} - {label}
                 </span>
             </p>
 
             <p>Plan Price:
                 <span className="font-bold pl-1">
-                    {userPlanSelect.price[planTime.label].listedPrice}
+                    {price?.[label]?.listedPrice}
                 </span>
             </p>
 
             <p
                 className="mt-1 p-1 rounded-lg bg-green-500 cursor-pointer text-center text-lg font-bold"
-                onClick={() => handlePlanParches(userPlanSelect)}
+                onClick={() => handlePlanParches(selectedPlanObj)}
             >
                 Purchase
             </p>
@@ -32,4 +39,4 @@ const TotalCalculation = ({ userPlanSelect, planTime }) => {
     )
 }
 
-export default TotalCalculation
+export default TotalCalculation;

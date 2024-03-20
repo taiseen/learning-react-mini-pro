@@ -13,6 +13,7 @@
 // import Tabs from "./components/tabs/Tabs";
 // import Table from "./components/table";
 
+import UserPlansContext from "./components/userSelectedPlan/context/UserPlansContext";
 import UserSelectedPlan from "./components/userSelectedPlan";
 
 const App = () => {
@@ -50,7 +51,9 @@ const App = () => {
 
       {/* <BackPosition /> */}
 
-      <UserSelectedPlan />
+      <UserPlansContext >
+        <UserSelectedPlan />
+      </UserPlansContext>
     </>
   );
 };
