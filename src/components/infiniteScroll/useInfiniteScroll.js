@@ -14,6 +14,8 @@ const useInfiniteScroll = (domRef) => {
 
             const url = `https://dummyjson.com/products?limit=${productsPerPage}&skip=${page * productsPerPage}`;
 
+            // const url = `http://localhost:3000/blogs?page=${page}&limit=${productsPerPage}`;
+
             const response = await fetch(url);
             const data = await response.json();
 
