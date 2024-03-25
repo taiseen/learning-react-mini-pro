@@ -1,7 +1,9 @@
+// import UserPlansContext from "./components/userSelectedPlan/context/UserPlansContext";
 // import TextareaConditionalUi from "./components/textareaConditionalUi";
 // import OutsideClickClose from "./components/outsideClickClose";
+// import UserSelectedPlan from "./components/userSelectedPlan";
 // import RadioBtnEffect from "./components/radioBtnEffect";
-import InfiniteScroll from "./components/infiniteScroll";
+// import InfiniteScroll from "./components/infiniteScroll";
 // import ListItemClick from "./components/listItemClick";
 // import Sidebar from "./components/sideMenuMultiLevel";
 // import DropdownMenu from "./components/dropdownMenu";
@@ -13,9 +15,7 @@ import InfiniteScroll from "./components/infiniteScroll";
 // import Tabs from "./components/tabs/Tabs";
 // import Table from "./components/table";
 
-
-// import UserPlansContext from "./components/userSelectedPlan/context/UserPlansContext";
-// import UserSelectedPlan from "./components/userSelectedPlan";
+import SelectableGrid from "./components/selectableGrid/SelectableGrid";
 
 const App = () => {
 
@@ -39,7 +39,7 @@ const App = () => {
 
       {/* <Tabs /> */}
 
-      <InfiniteScroll />
+      {/* <InfiniteScroll /> */}
 
       {/* <ModalSystem modalNum={1} /> */}
       {/* <ModalSystem modalNum={2} /> */}
@@ -56,7 +56,7 @@ const App = () => {
         <UserSelectedPlan />
       </UserPlansContext> */}
 
-      {/* <SelectableGrid rows={10} cols={10} /> */}
+      <SelectableGrid rows={10} cols={10} />
     </>
   );
 };

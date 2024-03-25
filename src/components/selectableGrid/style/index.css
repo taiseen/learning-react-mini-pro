@@ -1,0 +1,29 @@
+:root {
+    --boxSize: 35px;
+}
+
+.grid {
+    padding: 16px 0;
+    background-color: whitesmoke;
+    display: grid;
+    place-content: center;
+    grid-template-columns: repeat(var(--cols, 10), var(--boxSize));
+    grid-template-rows: repeat(var(--rows, 10), var(--boxSize));
+    gap: 4px;
+}
+
+.box {
+    width: var(--boxSize);
+    height: var(--boxSize);
+    border: 1px solid gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.box:hover {
+    background-color: tomato;
+}
