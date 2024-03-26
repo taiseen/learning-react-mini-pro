@@ -1,4 +1,5 @@
 // import UserPlansContext from "./components/userSelectedPlan/context/UserPlansContext";
+// import SelectableGrid from "./components/selectableGrid/SelectableGrid";
 // import TextareaConditionalUi from "./components/textareaConditionalUi";
 // import OutsideClickClose from "./components/outsideClickClose";
 // import UserSelectedPlan from "./components/userSelectedPlan";
@@ -15,7 +16,8 @@
 // import Tabs from "./components/tabs/Tabs";
 // import Table from "./components/table";
 
-import SelectableGrid from "./components/selectableGrid/SelectableGrid";
+import StarRating from "./components/starRating";
+
 
 const App = () => {
 
@@ -56,7 +58,9 @@ const App = () => {
         <UserSelectedPlan />
       </UserPlansContext> */}
 
-      <SelectableGrid rows={10} cols={10} />
+      {/* <SelectableGrid rows={10} cols={10} /> */}
+
+      <StarRating />
     </>
   );
 };
